@@ -13,10 +13,22 @@ b.Cada producto que estén 15 días a vencer se le otorgará un 15% de descuento
 c.Mostrar el total que se debe pagar*/
 
 void main(List<String> arguments) {
+  Producto producto1 = Producto("Producto 1", 100.0, DateTime.now().add(Duration(days: 15))); 
+  Producto producto2 = Producto("Producto 2", 50.0, null); 
+
+  Venta venta = Venta();
+  venta.agregarProducto(producto1);
+  venta.agregarProducto(producto2);
+
+  double total = venta.calcularTotal();
   
+  
+  print("Total a pagar: \$${total.toStringAsFixed(2)}");
 
 
 
+
+  print('Texto: ${parcial1.calculate()}');
 }
 
 class Producto{
