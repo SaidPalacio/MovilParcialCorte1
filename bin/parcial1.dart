@@ -13,3 +13,10 @@ void main(List<String> arguments) {
   print('Hello world: ${parcial1.calculate()}!');
 }
 
+class Producto{
+  String nombre;
+  double precio;
+  DateTime fechaVencimineto;
+
+  Producto(this.nombre, this.precio, this.fechaVencimineto);
+}
