@@ -21,13 +21,16 @@ void main(List<String> arguments) {
   venta.agregarProducto(producto2);
 
   double total = venta.calcularTotal();
+  print("Productos a vender:");
+  for (var producto in venta.productos) {
+    print("${producto.nombre}: \$${producto.precio}");
+  }
   
   
+
+
+
   print("Total a pagar: \$${total.toStringAsFixed(2)}");
-
-
-
-
   print('Texto: ${parcial1.calculate()}');
 }
 
