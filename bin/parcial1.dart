@@ -16,7 +16,13 @@ void main(List<String> arguments) {
 class Producto{
   String nombre;
   double precio;
-  DateTime fechaVencimineto;
+  DateTime fechaVen;
 
-  Producto(this.nombre, this.precio, this.fechaVencimineto);
+  Producto(this.nombre, this.precio, this.fechaVen);
+}
+
+class Venta{
+  String compra;
+
+  Venta(this.compra);
 }
